@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.container {
+  min-width: 80vw;
+  min-height: 80vh;
+  background-image: url(images/image\ \(1\).jpg);
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5%;
+  text-align: center;
+  justify-content: center;
+  animation: changes 23s infinite ease;
+}
+.container .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 3rem;
+}
+
+.container .content h1 {
+  color: #D42727;
+  font-size: 3rem;
+  
+} 
+.container .content span {
+  color: gray;
+}
+
+.container .content a {
+  text-decoration: none;
+  background: #b42f2f;
+  color: #eee;
+  border-radius: 12px;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.container .content a:hover {
+  background: rgb(212, 25, 25);
+  color: white;
+  transition: 0.25s;
+}
+
+@keyframes changes {
+    0%
+    {
+      background-image: url(images/image\ \(1\).jpg);
+    }
+    20%
+    {
+      background-image: url(images/image\ \(2\).jpg);
+    }
+    40%
+    {
+      background-image: url(images/image\ \(3\).jpg);
+    }
+    60%
+    {
+      background-image: url(images/image\ \(4\).jpg);
+    }
+    80%
+    {
+      background-image: url(images/image\ \(5\).jpg);
+    }
+}
